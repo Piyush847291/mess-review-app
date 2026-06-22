@@ -24,6 +24,7 @@ model Review {
   comment   String?
   photoUrl  String?
   helpfulCount Int      @default(0)
+  ownerReply   String?  // NEW: Optional field for the mess owner's response
   createdAt DateTime @default(now())
   
   messId    String
